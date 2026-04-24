@@ -27,7 +27,7 @@ export const BrandConfig = {
     phone: "+234 9036560360",
     whatsapp: "https://wa.me/2349036560360",
     email: "sales@ayortummenstore.com",
-    address: "Lekki, Lagos, Nigeria",
+    address: "Ibadan, Lagos Nigeria",
     instagram: "https://www.instagram.com/ayortummenstore/",
     workingDays: "Monday – Saturday, 9:00 AM – 6:00 PM",
     shortDescription:
