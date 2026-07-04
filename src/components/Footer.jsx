@@ -1,185 +1,95 @@
-import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart, faPaperPlane, faCheck } from "@fortawesome/free-solid-svg-icons";
-import { faWhatsapp, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { BrandConfig, categories } from "../data/config";
-import useReveal from "../hooks/useReveal";
+import { Link } from 'react-router-dom'
+import Logo from '../assets/logo.png'
 
 export default function Footer() {
-  const year = new Date().getFullYear();
-  const ref = useReveal();
-  const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!email.trim()) return;
-    setSubmitted(true);
-    setEmail("");
-  };
-
   return (
-    <footer ref={ref} className="bg-[#050505] border-t border-[#D4AF37]/10">
-
-      {/* Newsletter strip */}
-      <div className="border-b border-[#D4AF37]/10 py-12 px-6 md:px-10">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+    <footer className="bg-dark-grey text-white pt-20 pb-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div>
-            <p className="reveal font-['Cormorant_Garamond'] text-[#D4AF37] text-[11px] tracking-[0.4em] uppercase mb-1">
-              Stay Updated
-            </p>
-            <h3 className="reveal delay-100 font-['Playfair_Display'] text-white text-xl md:text-2xl font-bold">
-              New Arrivals & Exclusive Offers
-            </h3>
-            <p className="reveal delay-200 font-['Cormorant_Garamond'] text-white/40 text-sm mt-1">
-              Be the first to know about new fabrics, limited editions, and promos.
-            </p>
-          </div>
-
-          <div className="reveal delay-300 w-full md:w-auto">
-            {submitted ? (
-              <div className="flex items-center gap-3 px-6 py-4 border border-[#D4AF37]/30 bg-[#D4AF37]/5">
-                <FontAwesomeIcon icon={faCheck} className="text-[#D4AF37]" />
-                <span className="font-['Cormorant_Garamond'] text-white/70 text-sm tracking-wide">
-                  Thank you! We'll be in touch.
-                </span>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-20 h-20 flex items-center justify-center">
+                <img src={Logo} alt="" />
               </div>
-            ) : (
-              <form
-                onSubmit={handleSubmit}
-                className="flex items-stretch gap-0 w-full md:w-auto"
-              >
-                <input
-                  type="email"
-                  required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Enter your email address"
-                  className="font-['Cormorant_Garamond'] text-white/80 text-sm bg-white/5 border border-[#D4AF37]/20 border-r-0 px-5 py-3.5 placeholder-white/25 focus:outline-none focus:border-[#D4AF37]/50 transition-colors w-full md:w-72"
-                />
-                <button
-                  type="submit"
-                  className="flex items-center gap-2 bg-[#D4AF37] text-[#0A0A0A] px-5 py-3.5 font-['Cormorant_Garamond'] font-bold text-[11px] tracking-[0.2em] uppercase hover:bg-[#c9a227] transition-colors duration-300 flex-shrink-0"
-                >
-                  <FontAwesomeIcon icon={faPaperPlane} />
-                  Subscribe
-                </button>
-              </form>
-            )}
-          </div>
-        </div>
-      </div>
-
-      {/* Main footer grid */}
-      <div className="max-w-6xl mx-auto px-6 md:px-10 py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-        {/* Brand column */}
-        <div className="lg:col-span-2">
-          <div className="reveal mb-5">
-            <span className="font-['Playfair_Display'] text-[#D4AF37] text-2xl font-bold tracking-wider uppercase block">
-              Ayortum
-            </span>
-            <span className="font-['Cormorant_Garamond'] text-white/30 text-[10px] tracking-[0.3em] uppercase mt-0.5 block">
-              Men's Store
-            </span>
-          </div>
-          <p className="reveal delay-100 font-['Cormorant_Garamond'] text-white/40 text-base leading-relaxed max-w-xs mb-6">
-            {BrandConfig.footer.description}
-          </p>
-          {/* Social icons */}
-          <div className="reveal delay-200 flex gap-3">
-            <a
-              href={BrandConfig.contact.whatsapp}
-              target="_blank"
-              rel="noreferrer"
-              className="w-10 h-10 flex items-center justify-center border border-[#D4AF37]/20 text-[#D4AF37]/50 hover:border-[#D4AF37]/60 hover:text-[#D4AF37] hover:bg-[#D4AF37]/10 transition-all duration-300"
-              aria-label="WhatsApp"
-            >
-              <FontAwesomeIcon icon={faWhatsapp} />
-            </a>
-            <a
-              href={BrandConfig.contact.instagram}
-              target="_blank"
-              rel="noreferrer"
-              className="w-10 h-10 flex items-center justify-center border border-[#D4AF37]/20 text-[#D4AF37]/50 hover:border-[#D4AF37]/60 hover:text-[#D4AF37] hover:bg-[#D4AF37]/10 transition-all duration-300"
-              aria-label="Instagram"
-            >
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
+              {/* <div>
+                <h3 className="font-serif font-bold text-lg leading-tight">Accurratte Hommes</h3>
+                <p className="text-xs text-primary-orange tracking-wider">INTERNATIONAL</p>
+              </div> */}
+            </div>
+            <p className="text-white/60 text-sm leading-relaxed mb-6">
+              Providing trusted real estate and construction solutions across Nigeria since 2013.
+            </p>
+            <div className="flex gap-3">
+              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary-orange transition-all">
+                <i className="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary-orange transition-all">
+                <i className="fab fa-twitter"></i>
+              </a>
+              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary-orange transition-all">
+                <i className="fab fa-instagram"></i>
+              </a>
+              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary-orange transition-all">
+                <i className="fab fa-linkedin-in"></i>
+              </a>
+            </div>
           </div>
 
-          {/* Contact quick-links under brand */}
-          <div className="reveal delay-300 mt-6 flex flex-col gap-2">
-            <a href={`tel:${BrandConfig.contact.phone}`}
-               className="font-['Cormorant_Garamond'] text-white/35 hover:text-[#D4AF37] text-sm transition-colors duration-300 link-underline w-fit">
-              {BrandConfig.contact.phone}
-            </a>
-            <a href={`mailto:${BrandConfig.contact.email}`}
-               className="font-['Cormorant_Garamond'] text-white/35 hover:text-[#D4AF37] text-sm transition-colors duration-300 link-underline w-fit break-all">
-              {BrandConfig.contact.email}
-            </a>
+          <div>
+            <h4 className="font-serif font-bold text-lg mb-6">Quick Links</h4>
+            <ul className="space-y-3">
+              <li><Link to="/" className="text-white/60 hover:text-primary-orange transition-colors text-sm">Home</Link></li>
+              <li><Link to="/about" className="text-white/60 hover:text-primary-orange transition-colors text-sm">About Us</Link></li>
+              <li><Link to="/properties" className="text-white/60 hover:text-primary-orange transition-colors text-sm">Properties</Link></li>
+              <li><Link to="/services" className="text-white/60 hover:text-primary-orange transition-colors text-sm">Services</Link></li>
+              <li><Link to="/projects" className="text-white/60 hover:text-primary-orange transition-colors text-sm">Projects</Link></li>
+              <li><Link to="/contact" className="text-white/60 hover:text-primary-orange transition-colors text-sm">Contact</Link></li>
+            </ul>
           </div>
-        </div>
 
-        {/* Collections */}
-        <div>
-          <h4 className="reveal font-['Playfair_Display'] text-white text-sm font-semibold mb-5 uppercase tracking-wider">
-            Collections
-          </h4>
-          <ul className="flex flex-col gap-3">
-            {categories.map((c, i) => (
-              <li key={c.id}>
-                <a
-                  href="#products"
-                  className={`reveal delay-${(i + 1) * 100} font-['Cormorant_Garamond'] text-white/40 hover:text-[#D4AF37] text-sm tracking-wide transition-colors duration-300 link-underline`}
-                >
-                  {c.name}
-                </a>
+          <div>
+            <h4 className="font-serif font-bold text-lg mb-6">Services</h4>
+            <ul className="space-y-3">
+              <li><Link to="/services" className="text-white/60 hover:text-primary-orange transition-colors text-sm">Real Estate Consultancy</Link></li>
+              <li><Link to="/services" className="text-white/60 hover:text-primary-orange transition-colors text-sm">Building Construction</Link></li>
+              <li><Link to="/services" className="text-white/60 hover:text-primary-orange transition-colors text-sm">Project Management</Link></li>
+              <li><Link to="/services" className="text-white/60 hover:text-primary-orange transition-colors text-sm">Business Development</Link></li>
+              <li><Link to="/services" className="text-white/60 hover:text-primary-orange transition-colors text-sm">Land Acquisition</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-serif font-bold text-lg mb-6">Contact Info</h4>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
+                <i className="fas fa-map-marker-alt text-primary-orange mt-1"></i>
+                <span className="text-white/60 text-sm">PA Adebesin plaza<br />Opp Quarry Imperial Hotel, Quarry Road, Abeokuta, Ogun State.</span>
               </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Quick links */}
-        <div>
-          <h4 className="reveal font-['Playfair_Display'] text-white text-sm font-semibold mb-5 uppercase tracking-wider">
-            Navigate
-          </h4>
-          <ul className="flex flex-col gap-3">
-            {[
-              { label: "Home",         href: "#hero"         },
-              { label: "About Us",     href: "#about"        },
-              { label: "Products",     href: "#products"     },
-              { label: "Why Choose Us",href: "#why-us"       },
-              { label: "Testimonials", href: "#testimonials" },
-              { label: "Contact",      href: "#contact"      },
-            ].map((l, i) => (
-              <li key={l.href}>
-                <a
-                  href={l.href}
-                  className={`reveal delay-${(i + 1) * 100} font-['Cormorant_Garamond'] text-white/40 hover:text-[#D4AF37] text-sm tracking-wide transition-colors duration-300 link-underline`}
-                >
-                  {l.label}
-                </a>
+              <li className="flex items-center gap-3">
+                <i className="fas fa-phone text-primary-orange"></i>
+                <span className="text-white/60 text-sm">+234 708 140 2661</span>
+                
               </li>
-            ))}
-          </ul>
+              <li className="flex items-center gap-3">
+                <i className="fas fa-envelope text-primary-orange"></i>
+                <span className="text-white/60 text-sm">accurratteh@gmail.com</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <i className="fas fa-globe text-primary-orange"></i>
+                <span className="text-white/60 text-sm">www.accurrattehommes.com</span>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      {/* Bottom bar */}
-      <div className="border-t border-[#D4AF37]/8 px-6 md:px-10 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
-        <p className="font-['Cormorant_Garamond'] text-white/20 text-xs tracking-wider text-center sm:text-left">
-          © {year} Ayortum Men's Store · All rights reserved.
-        </p>
-        <div className="flex items-center gap-4">
-          <span className="hidden sm:block h-3 w-px bg-white/10" />
-          <p className="font-['Cormorant_Garamond'] text-white/15 text-xs tracking-wider flex items-center gap-1.5">
-            Crafted with
-            <FontAwesomeIcon icon={faHeart} className="text-[#D4AF37]/30 text-[10px]" />
-            in Lagos, Nigeria
-          </p>
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-white/40 text-sm">&copy; 2026 Accurratte Hommes International. All rights reserved. BN: 3130834</p>
+          <div className="flex gap-6">
+            <a href="#" className="text-white/40 hover:text-primary-orange text-sm transition-colors">Privacy Policy</a>
+            <a href="#" className="text-white/40 hover:text-primary-orange text-sm transition-colors">Terms of Service</a>
+          </div>
         </div>
       </div>
     </footer>
-  );
+  )
 }
