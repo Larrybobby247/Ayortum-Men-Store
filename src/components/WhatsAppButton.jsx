@@ -1,5 +1,5 @@
 export default function WhatsAppButton() {
-  const phoneNumber = "234XXXXXXXXXX" // Replace with actual WhatsApp number
+  const phoneNumber = "2347081402661" // Replace with actual WhatsApp number
   const message = "Hello, I'm interested in Accurratte Hommes International services."
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
 

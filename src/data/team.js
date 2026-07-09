@@ -38,7 +38,7 @@ export const teamMembers = [
   {
     id: 4,
     name: "Olatunji Taofeeq",
-    role: "Administrative Officer",
+    role: "Project Manager",
     image: Team4,
     bio: "Ensuring smooth operations and excellent client communication.",
     linkedin: "#",
@@ -47,7 +47,7 @@ export const teamMembers = [
   {
     id: 5,
     name: "Mrs. Omolola Diekola",
-    role: "Project Manager",
+    role: "Administrative Officer",
     image: Team5,
     bio: "Overseeing project execution with meticulous attention to detail.",
     linkedin: "#",
@@ -56,7 +56,7 @@ export const teamMembers = [
   {
     id: 6,
     name: "Olaonipekun Yusuf",
-    role: "Business Development Officer",
+    role: "Real Estate Broker",
     image: Team6,
     bio: "Driving growth and identifying new market opportunities.",
     linkedin: "#",
@@ -65,7 +65,7 @@ export const teamMembers = [
   {
     id: 7,
     name: "Yemi Davies",
-    role: "Real Estate Broker",
+    role: "Business Development Officer",
     image: Team7,
     bio: "Connecting clients with their ideal properties across Nigeria.",
     linkedin: "#",

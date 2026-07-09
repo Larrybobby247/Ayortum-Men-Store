@@ -23,6 +23,8 @@ import Partner7 from '../assets/partner7.png'
 import News1 from '../assets/news1.jpg'
 import News2 from '../assets/news2.jpg'
 import News3 from '../assets/news3.jpeg'
+import HeroSlider from '../components/HeroSlider'
+import HomeVistaBanner from '../components/HomeVistaBanner'
 
 function StatCard({ target, suffix, label, delay }) {
   const { count, ref } = useCounter(target, 2000)
@@ -38,47 +40,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-fixed bg-center bg-cover"
-          style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80)' }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-r from-dark-grey/90 via-dark-grey/70 to-transparent"></div>
-        </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6" data-aos="fade-right">
-              <span className="w-2 h-2 bg-primary-orange rounded-full animate-pulse"></span>
-              <span className="text-white/90 text-sm font-medium">Established Since 2013</span>
-            </div>
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6" data-aos="fade-up" data-aos-delay="100">
-              Providing Trusted <span className="text-primary-orange">Real Estate</span> & <span className="text-primary-green">Construction</span> Solutions Across Nigeria
-            </h1>
-            <p className="text-lg text-white/80 mb-8 max-w-2xl leading-relaxed" data-aos="fade-up" data-aos-delay="200">
-              Accurratte Hommes International is a leading real estate and construction company committed to delivering quality land acquisition, property development, project management, consultancy, and investment opportunities for clients in Nigeria and the diaspora.
-            </p>
-            <div className="flex flex-wrap gap-4 mb-12" data-aos="fade-up" data-aos-delay="300">
-              <Link to="/properties" className="bg-primary-orange text-white px-8 py-4 rounded-full font-semibold hover:bg-primary-orange/90 transition-all hover:shadow-lg hover:shadow-primary-orange/30 flex items-center gap-2">
-                <span>Explore Properties</span><i className="fas fa-arrow-right"></i>
-              </Link>
-              <Link to="/contact" className="bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white px-8 py-4 rounded-full font-semibold hover:bg-white/20 transition-all flex items-center gap-2">
-                <span>Contact Us</span><i className="fas fa-phone"></i>
-              </Link>
-            </div>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4" data-aos="fade-up" data-aos-delay="400">
-              <StatCard target={2013} suffix="" label="Established Since" delay={100} />
-              <StatCard target={50} suffix="+" label="Delivered Projects" delay={200} />
-              <StatCard target={20} suffix="+" label="Professional Team" delay={300} />
-              <StatCard target={500} suffix="+" label="Trusted Clients" delay={400} />
-            </div>
-          </div>
-        </div>
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-8 h-12 border-2 border-white/40 rounded-full flex justify-center pt-2">
-            <div className="w-1.5 h-3 bg-primary-orange rounded-full animate-pulse"></div>
-          </div>
-        </div>
-      </section>
+      <HeroSlider />
 
       {/* About Preview */}
       <section className="py-20 bg-white">
@@ -480,6 +442,10 @@ export default function Home() {
             ))}
           </div>
         </div>
+      </section>
+
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
+            <HomeVistaBanner/>
       </section>
 
       {/* Testimonials */}

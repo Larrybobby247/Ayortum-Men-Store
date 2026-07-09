@@ -3,14 +3,17 @@ import PageHeader from '../components/PageHeader'
 import useScrollToTop from '../hooks/useScrollToTop'
 
 import Img1 from '../assets/project2.jpg'
-import Img2 from '../assets/project4.jpg'
-import Img3 from '../assets/project5.jpg'
+import Img2 from '../assets/gallary16.png'
+import Img3 from '../assets/gallary8.jpg'
 import Img4 from '../assets/project1.jpg'
-import Img5 from '../assets/project6.jpg'
+import Img5 from '../assets/gallary12.png'
 import Img6 from '../assets/project3.jpg'
-import Img7 from '../assets/project7.jpg'
-import Img8 from '../assets/project8.jpg'
-import Img9 from '../assets/project9.jpg'
+import Img7 from '../assets/gallary14.jpg'
+import Img8 from '../assets/gallary9.jpg'
+import Img9 from '../assets/gallary10.jpg'
+import Img10 from '../assets/gallary11.jpg'
+
+
 
 const galleryItems = [
   { id: 1, img: Img1, category: 'lands' },
@@ -22,6 +25,8 @@ const galleryItems = [
   { id: 7, img: Img7, category: 'houses' },
   { id: 8, img: Img8, category: 'lands' },
   { id: 9, img: Img9, category: 'construction' },
+  { id: 10, img: Img10, category: 'construction' },
+
 ]
 
 export default function Gallery() {

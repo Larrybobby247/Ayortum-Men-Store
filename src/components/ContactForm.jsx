@@ -19,7 +19,7 @@ export default function ContactForm({ isWhatsApp = true }) {
     e.preventDefault()
 
     if (isWhatsApp) {
-      const phoneNumber = "234XXXXXXXXXX" // Replace with actual WhatsApp number
+      const phoneNumber = "2347081402661" // Replace with actual WhatsApp number
       const text = `*New Inquiry from Accurratte Hommes Website*%0A%0A` +
         `*Name:* ${formData.fullName}%0A` +
         `*Email:* ${formData.email}%0A` +
