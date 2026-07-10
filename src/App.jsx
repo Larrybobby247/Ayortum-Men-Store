@@ -19,6 +19,7 @@ import Projects from './pages/Projects'
 import Gallery from './pages/Gallery'
 import News from './pages/News'
 import Contact from './pages/Contact'
+import MetroluxEstate from './pages/MetroluxEstate'
 
 function App() {
   useEffect(() => {
@@ -46,6 +47,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/news" element={<News />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/metrolux" element={<MetroluxEstate />} />
         </Routes>
       </main>
       <Footer />

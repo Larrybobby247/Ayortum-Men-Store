@@ -11,7 +11,7 @@ export default function PropertyDetails() {
   return (
     <>
       <PageHeader
-        title="Property Details"
+        title={property.name}
         subtitle={property.location}
         icon="fa-info-circle"
         bgImage="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80"
@@ -46,14 +46,14 @@ export default function PropertyDetails() {
                 ))}
               </div>
 
-              <h3 className="font-serif text-xl font-bold text-dark-grey mb-4">Location Map</h3>
+              {/* <h3 className="font-serif text-xl font-bold text-dark-grey mb-4">Location Map</h3>
               <div className="rounded-2xl overflow-hidden h-80 bg-gray-100 flex items-center justify-center">
                 <div className="text-center">
                   <i className="fas fa-map-marked-alt text-primary-orange text-4xl mb-3"></i>
                   <p className="text-gray-500 text-sm">Google Maps Integration</p>
                   <p className="text-gray-400 text-xs mt-1">{property.location}</p>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <div>

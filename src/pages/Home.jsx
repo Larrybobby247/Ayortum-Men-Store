@@ -7,6 +7,10 @@ import Img3 from '../assets/project5.jpg'
 import Img4 from '../assets/project1.jpg'
 import Img5 from '../assets/project6.jpg'
 
+import property1 from '../assets/property1a.jpg'
+import property2 from '../assets/property2a.jpg'
+import property3 from '../assets/property3a.jpg'
+
 import Team1 from '../assets/team1.jpg'
 import Team2 from '../assets/team2.jpg'
 import Team3 from '../assets/team3.jpg'
@@ -162,9 +166,9 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { img: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=400&fit=crop', badge: 'For Sale', badgeColor: 'bg-primary-orange', loc: 'Abeokuta', tags: ['Residential', 'Land'], price: '₦5,000,000', detail: '600 sqm', name: 'Premium Estate Land' },
-              { img: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop', badge: 'For Rent', badgeColor: 'bg-primary-green', loc: 'Lagos', tags: ['Residential', 'Duplex'], price: '₦85,000,000', detail: '5 Beds | 6 Baths', name: 'Luxury 5-Bedroom Duplex' },
-              { img: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop', badge: 'Investment', badgeColor: 'bg-primary-orange', loc: 'Ibadan', tags: ['Commercial', 'Office'], price: '₦120,000,000', detail: '3 Floors', name: 'Prime Commercial Plaza' },
+              { img: property1, badge: 'For Rent', badgeColor: 'bg-primary-green', loc: 'Orchid, Lekki, Lagos', tags: ['Residential', 'Duplex'], price: '₦10,000,000', detail: '4 Beds', name: '4 Bedroom Semi Detached Duplex for Rent' },
+              { img: property2, badge: 'For Sale', badgeColor: 'bg-primary-orange', loc: 'Ikoyi, Lagos', tags: ['Residential', 'Duplex'], price: '₦3,500,000,000', detail: '5 Beds | 500sqm', name: 'Luxury 5-Bedroom Duplex' },
+              { img: property3, badge: 'For Sale', badgeColor: 'bg-primary-orange', loc: 'Lekki Phase 1, Lagos', tags: ['Residential', 'Dulex'], price: '₦300,000,000', detail: '2 Beds', name: '2 Bedroom Apartment' },
             ].map((prop, i) => (
               <div key={prop.name} className="bg-white rounded-2xl overflow-hidden shadow-sm card-hover group" data-aos="fade-up" data-aos-delay={(i + 1) * 100}>
                 <div className="relative img-zoom h-64">
@@ -292,7 +296,7 @@ export default function Home() {
               { name: 'Amb. Egbetola Lekan', role: 'Managing Director', img: Team1 },
               { name: 'Engr. Aninkan A. Solomon', role: 'Senior Project Manager', cert: '(COREN Certified)', img: Team2 },
               { name: 'Barr. Abayomi O. Lydia', role: 'Legal Consultant', img: Team3 },
-              { name: 'Olatunji Taofeeq', role: 'Administrative Officer', img: Team4 },
+              { name: 'Olatunji Taofeeq', role: 'Project Manager', img: Team4 },
             ].map((member, i) => (
               <div key={member.name} className="team-card bg-white rounded-2xl overflow-hidden shadow-sm group" data-aos="fade-up" data-aos-delay={(i + 1) * 100}>
                 <div className="relative h-72 overflow-hidden">

@@ -48,7 +48,7 @@ const HeroSlider = () => {
       ],
       description: 'Discover Metrolux Estate — our premium upcoming development designed for modern living and smart investment. Premium plots and homes in a strategically located, master-planned community.',
       buttons: [
-        { text: 'Learn More About Metrolux', icon: 'arrow', style: 'primary', link: '/metrolux-estate' }
+        { text: 'Learn More About Metrolux', icon: 'arrow', style: 'primary', link: '/metrolux' }
       ],
       stats: [
         { target: 100, suffix: '%', label: 'Premium Location' },
@@ -164,7 +164,7 @@ const HeroSlider = () => {
 
   return (
     <section 
-      className="relative min-h-[130vh] md:min-h-[100vh] flex items-center justify-center overflow-hidden bg-dark-grey"
+      className="relative h-[130vh] lg:h-[150vh] flex items-center justify-center overflow-hidden bg-dark-grey"
       onMouseEnter={() => clearInterval(autoplayRef.current)}
       onMouseLeave={resetAutoplay}
       onTouchStart={handleTouchStart}

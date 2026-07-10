@@ -5,6 +5,8 @@ import Team4 from '../assets/team5.jpg'
 import Team5 from '../assets/team4.jpg'
 import Team6 from '../assets/team7.jpeg'
 import Team7 from '../assets/team6.jpeg'
+import Team8 from '../assets/team8.jpg'
+
 
 export const teamMembers = [
   {
@@ -67,6 +69,15 @@ export const teamMembers = [
     name: "Yemi Davies",
     role: "Business Development Officer",
     image: Team7,
+    bio: "Connecting clients with their ideal properties across Nigeria.",
+    linkedin: "#",
+    twitter: "#"
+  },
+  {
+    id: 8,
+    name: "Bar. Habeeb Whyte",
+    role: "Legal Advisor",
+    image: Team8,
     bio: "Connecting clients with their ideal properties across Nigeria.",
     linkedin: "#",
     twitter: "#"
