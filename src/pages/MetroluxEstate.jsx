@@ -499,11 +499,17 @@ const MetroluxEstate = () => {
               {/* Map Placeholder */}
               <div className="mt-6">
                 <div className="w-full h-[300px] rounded-2xl bg-gradient-to-br from-[#e8e8e8] to-[#d0d0d0] flex items-center justify-center relative overflow-hidden">
-                  <div className="text-center z-10">
-                    <MapPin size={48} className="text-[#F58F20] mx-auto mb-2" />
-                    <div className="font-semibold text-[#363636]">Abeokuta, Ogun State</div>
-                    <div className="text-xs text-[#363636]/50 mt-1">Replace with embedded Google Map iframe</div>
-                  </div>
+                  
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d21315.88021958031!2d3.3384289924334656!3d7.135321568373415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sNo.%2047%2C%20Opposite%20Federal%20Mortgage%20Bank%2C%20Quarry%20Road%2C%20Abeokuta%2C%20Ogun%20State!5e0!3m2!1sen!2sus!4v1783165773351!5m2!1sen!2sus"
+            width="100%"
+            height="400"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+          
                 </div>
               </div>
             </div>
