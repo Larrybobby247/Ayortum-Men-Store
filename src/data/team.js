@@ -3,7 +3,7 @@ import Team2 from '../assets/team2.jpg'
 import Team3 from '../assets/team3.jpg'
 import Team4 from '../assets/team5.jpg'
 import Team5 from '../assets/team4.jpg'
-import Team6 from '../assets/team7.jpeg'
+import Team6 from '../assets/team7.jpg'
 import Team7 from '../assets/team6.jpeg'
 import Team8 from '../assets/team8.jpg'
 
