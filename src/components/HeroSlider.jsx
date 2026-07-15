@@ -30,7 +30,7 @@ const HeroSlider = () => {
         { text: 'Contact Us', icon: 'phone', style: 'outline', link: '/contact' }
       ],
       stats: [
-        { target: 2013, suffix: '', label: 'Established Since' },
+        { target: 2016, suffix: '', label: 'Established Since' },
         { target: 50, suffix: '+', label: 'Delivered Projects' },
         { target: 20, suffix: '+', label: 'Professional Team' },
         { target: 500, suffix: '+', label: 'Trusted Clients' }
