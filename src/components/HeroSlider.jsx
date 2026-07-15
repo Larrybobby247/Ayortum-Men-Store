@@ -16,7 +16,7 @@ const HeroSlider = () => {
     {
       id: 1,
       bgImage: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80',
-      badge: { text: 'Established Since 2013', dot: true },
+      badge: { text: 'Established Since 2016', dot: true },
       titleParts: [
         'Providing Trusted ',
         { text: 'Real Estate', color: 'text-primary-orange' },
