@@ -12,6 +12,9 @@ import Img7 from '../assets/gallary14.jpg'
 import Img8 from '../assets/gallary9.jpg'
 import Img9 from '../assets/gallary10.jpg'
 import Img10 from '../assets/gallary11.jpg'
+import Img11 from '../assets/gallary18.jpg'
+import Img12 from '../assets/gallary19.jpg'
+import Img13 from '../assets/gallary20.jpg'
 
 
 
@@ -25,6 +28,9 @@ const galleryItems = [
   { id: 7, img: Img7, category: 'houses' },
   { id: 8, img: Img8, category: 'lands' },
   { id: 9, img: Img9, category: 'construction' },
+  { id: 11, img: Img11, category: 'construction' },
+  { id: 12, img: Img12, category: 'construction' },
+  { id: 13, img: Img13, category: 'construction' },
   { id: 10, img: Img10, category: 'construction' },
 
 ]

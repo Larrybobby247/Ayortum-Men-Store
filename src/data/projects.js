@@ -5,6 +5,10 @@ import Img4 from '../assets/project1.jpg'
 import Img5 from '../assets/project6.jpg'
 import Img6 from '../assets/project8.jpg'
 import Img7 from '../assets/project9.jpg'
+import Img8 from '../assets/project10.jpg'
+import Img9 from '../assets/project11.jpg'
+import Img10 from '../assets/project13.jpg'
+import Img11 from '../assets/project14.jpg'
 
 
 export const projects = [
@@ -54,14 +58,49 @@ export const projects = [
   },
   {
     id: 5,
-    name: "Bungalow Estate",
+    name: "Building Construction Project",
     category: "construction",
     type: "Construction",
-    location: "Abeokuta, Ogun State",
-    year: "2021-2023",
+    location: "",
+    year: "2026",
+    status: "Ongoing",
+    image: Img9,
+    description: "Construction of a multi-story building with modern architectural design and sustainable building practices."
+  },
+  {
+    id: 5,
+    name: "Dulex Building",
+    category: "construction",
+    type: "Construction",
+    location: "",
+    year: "2026",
     status: "Completed",
-    image: Img6,
-    description: "Construction of 30 modern bungalows in a family-friendly estate with recreational facilities."
+    image: Img8,
+    description: "Construction of a 2-floor duplex building with contemporary design and high-quality finishes."
+  },
+  {
+    id: 5,
+    name: "Dulex Building",
+    category: "construction",
+    type: "Construction",
+    location: "",
+    year: "2026",
+    status: "Ongoing",
+    image: Img10,
+    description: "Construction of a 2-floor duplex building with contemporary design and high-quality finishes."
+  },
+
+
+  {
+    id: 5,
+    name: "2 Storey Building",
+    category: "construction",
+    type: "Construction",
+    location: "",
+    year: "2026",
+    status: "Ongoing",
+    image: Img11,
+    description: "Construction of a 2-storey building with modern architectural design and sustainable building practices."
   },
   {
     id: 6,

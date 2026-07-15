@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom'
 import useCounter from '../hooks/useCounter'
 
 import Img1 from '../assets/project2.jpg'
-import Img2 from '../assets/project4.jpg'
+import Img2 from '../assets/project17.jpg'
 import Img3 from '../assets/project5.jpg'
-import Img4 from '../assets/project1.jpg'
+import Img4 from '../assets/project10.jpg'
 import Img5 from '../assets/project6.jpg'
 
 import property1 from '../assets/property1a.jpg'
