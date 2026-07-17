@@ -19,7 +19,7 @@ export default function About() {
     <>
       <PageHeader
         title="About Us"
-        subtitle="Building trust and delivering excellence in real estate and construction since 2013."
+        subtitle="Building trust and delivering excellence in real estate and construction since 2016."
         icon="fa-building"
         bgImage="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80"
       />
@@ -31,7 +31,7 @@ export default function About() {
             <div data-aos="fade-right">
               <h2 className="font-serif text-3xl font-bold text-dark-grey mb-6">Our Story</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                Founded in 2013, Accurratte Hommes International began with a simple mission: to provide transparent, professional, and reliable real estate services to Nigerians at home and in the diaspora.
+                Founded in 2016, Accurratte Hommes International began with a simple mission: to provide transparent, professional, and reliable real estate services to Nigerians at home and in the diaspora.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
                 Over the past decade, we have grown from a small consultancy into a full-service real estate and construction company, delivering over 50 projects across multiple states in Nigeria.

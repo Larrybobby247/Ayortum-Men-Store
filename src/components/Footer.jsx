@@ -17,7 +17,7 @@ export default function Footer() {
               </div> */}
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-6">
-              Providing trusted real estate and construction solutions across Nigeria since 2013.
+              Providing trusted real estate and construction solutions across Nigeria since 2016.
             </p>
             <div className="flex gap-3">
               <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary-orange transition-all">

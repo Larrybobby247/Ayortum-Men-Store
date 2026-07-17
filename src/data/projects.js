@@ -108,7 +108,7 @@ export const projects = [
     category: "consultancy",
     type: "Consultancy",
     location: "Multiple Locations",
-    year: "2013-2026",
+    year: "2016-2026",
     status: "Ongoing",
     image: Img7,
     description: "Facilitated land acquisition for over 200 clients across Ogun, Lagos, and Oyo states with full documentation."

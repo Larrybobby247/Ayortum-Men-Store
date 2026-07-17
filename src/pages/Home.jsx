@@ -55,10 +55,10 @@ export default function Home() {
                 <i className="fas fa-building"></i><span>About Us</span>
               </div>
               <h2 className="font-serif text-3xl lg:text-4xl font-bold text-dark-grey mb-6 leading-tight">
-                Building Trust, Delivering <span className="text-primary-orange">Excellence</span> Since 2013
+                Building Trust, Delivering <span className="text-primary-orange">Excellence</span> Since 2016
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Accurratte Hommes International is a registered Nigerian real estate and construction company founded in 2013. The company provides land acquisition, housing solutions, construction services, project management, business development, and consultancy services.
+                Accurratte Hommes International is a registered Nigerian real estate and construction company founded in 2016. The company provides land acquisition, housing solutions, construction services, project management, business development, and consultancy services.
               </p>
               <p className="text-gray-600 leading-relaxed mb-8">
                 The organization is driven by innovation, professionalism, quality service delivery, and client satisfaction. Through experienced professionals and strategic partnerships, the company continues to provide affordable and reliable real estate opportunities.
