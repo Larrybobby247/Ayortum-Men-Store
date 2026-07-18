@@ -25,13 +25,32 @@ import property4b from '../assets/property4c.jpg'
 import property4c from '../assets/property4d.jpg'
 import property4d from '../assets/property4e.jpg'
 
+import property5 from '../assets/property5a.jpg'
+import property5a from '../assets/property5b.jpg'
+import property5b from '../assets/property5c.jpg'
+import property5c from '../assets/property5d.jpg'
+import property5d from '../assets/property5e.jpg'
+
+import property6 from '../assets/property6a.jpg'
+import property6a from '../assets/property6b.jpg'
+import property6b from '../assets/property6c.jpg'
+import property6c from '../assets/property6d.jpg'
+import property6d from '../assets/property6e.jpg'
+
+import property7 from '../assets/property7a.png'
+import property7a from '../assets/property7b.png'
+import property7b from '../assets/property7c.png'
+import property7c from '../assets/property7d.jpg'
+import property7d from '../assets/property7e.png'
+import property7e from '../assets/property7f.png'
+
 
 export const properties = [
   {
     id: 1,
     name: "4 Bedroom Semi Detached Duplex for Rent",
-    category: "land",
-    type: "Land",
+    category: "residential",
+    type: "Residential",
     subType: "Estate",
     status: "For Rent",
     location: "Orchid, Lekki, Lagos",
@@ -157,62 +176,119 @@ export const properties = [
       property4d,
     ]
   },
-  // {
-  //   id: 5,
-  //   name: "Modern 3-Bedroom Bungalow",
-  //   category: "residential",
-  //   type: "Residential",
-  //   subType: "Bungalow",
-  //   status: "For Sale",
-  //   location: "Abeokuta, Ogun State",
-  //   price: "₦35,000,000",
-  //   size: "500 sqm",
-  //   beds: 3,
-  //   baths: 4,
-  //   floors: 1,
-  //   image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=400&fit=crop",
-  //   description: "Beautifully designed bungalow with modern amenities, spacious compound, and secure neighborhood.",
-  //   features: [
-  //     "Spacious Compound",
-  //     "Modern Kitchen",
-  //     "Guest Toilet",
-  //     "Parking Space",
-  //     "Fenced & Gated",
-  //     "Borehole Water"
-  //   ],
-  //   title: "C of O",
-  //   gallery: [
-  //     "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=400&fit=crop",
-  //     "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop"
-  //   ]
-  // },
-  // {
-  //   id: 6,
-  //   name: "Executive Office Suites",
-  //   category: "commercial",
-  //   type: "Commercial",
-  //   subType: "Office",
-  //   status: "For Rent",
-  //   location: "Lagos, Nigeria",
-  //   price: "₦2,500,000/yr",
-  //   size: "200 sqm",
-  //   beds: null,
-  //   baths: null,
-  //   floors: null,
-  //   image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=400&fit=crop",
-  //   description: "Premium office spaces in a modern business complex with 24/7 power and security.",
-  //   features: [
-  //     "24/7 Power",
-  //     "Security",
-  //     "Elevator",
-  //     "Parking",
-  //     "Air Conditioning",
-  //     "Internet Ready"
-  //   ],
-  //   title: "Lease Agreement",
-  //   gallery: [
-  //     "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=400&fit=crop",
-  //     "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop"
-  //   ]
-  // }
+  {
+  id: 5,
+  name: "Luxury 4-Bedroom Detached Duplex",
+  category: "residential",
+  type: "Residential",
+  subType: "Detached Duplex",
+  status: "For Sale",
+  location: "Pearl Garden Estate",
+  price: "Price on Request", // Replace with actual price if available
+  size: "N/A", // Replace with actual land/building size if available
+  beds: 4,
+  baths: 4,
+  floors: 2,
+  image: property5,
+  description:
+    "An elegant 4-bedroom detached duplex located in the serene Pearl Garden Estate, featuring premium finishes, a private swimming pool, spacious living areas, and excellent accessibility just 8 minutes from the Coastal Road.",
+  features: [
+    "4 Spacious En-suite Bedrooms",
+    "Boys' Quarters (BQ)",
+    "Private Swimming Pool",
+    "Fully Fitted Kitchen",
+    "Spacious Living & Dining Area",
+    "Family Lounge",
+    "Walk-in Closets",
+    "Ample Parking Space",
+    "Modern Finishes",
+    "Located in a Serene Estate"
+  ],
+  title: "C of O",
+  gallery: [
+    property5a,
+    property5b,
+    property5c,
+    property5d
+  ]
+},
+  {
+  id: 7,
+  name: "Luxury 4-Bedroom Detached Duplex with Penthouse",
+  category: "residential",
+  type: "Residential",
+  subType: "Detached Duplex",
+  status: "For Sale",
+  location: "Lekki Palm City, Lekki, Lagos",
+  price: "₦250,000,000",
+  size: "N/A", // Replace with actual size if available
+  beds: 4,
+  baths: 4,
+  floors: 3,
+  image: property7,
+  description:
+    "Experience luxury living in this beautifully designed 4-bedroom fully detached duplex with a private penthouse, located in the serene and secure Lekki Palm City. The home features premium finishes, spacious interiors, a private cinema room, and a modern fitted kitchen, making it an ideal family residence.",
+  features: [
+    "4 Spacious Ensuite Bedrooms",
+    "Private Penthouse",
+    "Modern Fitted Kitchen",
+    "Private Cinema Room",
+    "Stylish Interior Finishing",
+    "Quality Fittings",
+    "Spacious Living Areas",
+    "Ample Parking Space",
+    "Serene & Secure Estate",
+    "Fully Detached Duplex"
+  ],
+  title: "Certificate of Occupancy (C of O)",
+  gallery: [
+    property7a,
+    property7b,
+    property7c,
+    property7d,
+    property7e
+  ]
+},
+{
+  id: 6,
+  name: "The Meridian Villas – 4-Bedroom Detached Duplex",
+  category: "residential",
+  type: "Residential",
+  subType: "Detached Duplex",
+  status: "For Sale",
+  location: "Victory Estate, Ajah, Lagos",
+  price: "₦290,000,000 - ₦300,000,000",
+  size: "N/A", // Replace with actual size if available
+  beds: 4,
+  baths: 4,
+  floors: 2,
+  image: property6,
+  description:
+    "The Meridian Villas is a luxurious 4-bedroom fully detached duplex located in Victory Estate, Ajah. Designed with premium finishes, smart home features, spacious living areas, and an optional private swimming pool, this elegant home offers modern comfort in a secure and serene environment.",
+  features: [
+    "4 En-Suite Bedrooms",
+    "Fully Fitted Modern Kitchen with Pantry",
+    "Family Lounge",
+    "Smart Home Features",
+    "Attached Boys' Quarters (BQ)",
+    "Ample Parking Space (3 Cars)",
+    "Optional Private Swimming Pool",
+    "Pergola",
+    "Beautifully Landscaped Garden",
+    "Premium Interior Finishes",
+    "Walk-In Closet",
+    "Modern Bathrooms",
+    "POP Ceilings with Spotlights",
+    "Large Windows for Natural Light",
+    "High-Quality Floor Tiles & Wardrobes",
+    "Balcony with Glass Railings"
+  ],
+  title: "Governor's Consent",
+  gallery: [
+    property6a,
+    property6b,
+    property6c,
+    property6d
+  ]
+}
 ]
