@@ -44,6 +44,28 @@ import property7c from '../assets/property7d.jpg'
 import property7d from '../assets/property7e.png'
 import property7e from '../assets/property7f.png'
 
+import property8 from '../assets/property8a.jpg'
+import property8a from '../assets/property8b.jpg'
+import property8b from '../assets/property8c.jpg'
+import property8d from '../assets/property8d.jpg'
+
+import property9 from '../assets/property9a.jpg'
+import property9a from '../assets/property9b.jpg'
+import property9b from '../assets/property9c.jpg'
+import property9c from '../assets/property9d.jpg'
+import property9d from '../assets/property9e.jpg'
+import property9e from '../assets/property9f.jpg'
+
+import property10 from '../assets/property10a.jpg'
+import property10a from '../assets/property10b.jpg'
+import property10b from '../assets/property10c.jpg'
+import property10c from '../assets/property10d.jpg'
+
+import property11 from '../assets/property11a.jpg'
+import property11a from '../assets/property11b.jpg'
+import property11b from '../assets/property11c.jpg'
+import property11c from '../assets/property11d.jpg'
+
 
 export const properties = [
   {
@@ -289,6 +311,149 @@ export const properties = [
     property6b,
     property6c,
     property6d
+  ]
+},
+{
+  id: 8,
+  name: "5-Bedroom Detached Duplex with 2 Boys' Quarters (Carcass)",
+  category: "residential",
+  type: "Residential",
+  subType: "Detached Duplex",
+  status: "For Sale",
+  location: "Cluster 1, Ibara GRA, Abeokuta, Ogun State",
+  price: "₦300,000,000",
+  size: "N/A", // Replace with actual plot/building size if available
+  beds: 5,
+  baths: 5,
+  floors: 2,
+  image: property8,
+  description:
+    "Own this premium 5-bedroom detached duplex with two Boys' Quarters, strategically located in the prestigious Cluster 1, Ibara GRA, Abeokuta. Offered at the carcass stage, this property allows you to complete the interior to your preferred style and specifications while enjoying a prime location in a serene and secure neighborhood.",
+  features: [
+    "5 Spacious Bedrooms",
+    "All Rooms En-Suite",
+    "2 Boys' Quarters (BQs)",
+    "Carcass Stage",
+    "Spacious Living Areas",
+    "Customizable Interior Finish",
+    "Secure Neighborhood",
+    "Prestigious GRA Location",
+    "Ample Parking Space",
+    "Excellent Investment Opportunity"
+  ],
+  title: "C of O",
+  gallery: [
+    property8a,
+    property8b,
+    property8c,
+    property8d
+  ]
+},
+{
+  id: 9,
+  name: "Premium 4-Bedroom Detached Duplex with 2 Boys' Quarters",
+  category: "residential",
+  type: "Residential",
+  subType: "Detached Duplex",
+  status: "For Sale",
+  location: "Cluster 2, Ibara GRA, Abeokuta, Ogun State",
+  price: "₦420,000,000",
+  size: "750 sqm",
+  beds: 4,
+  baths: 4,
+  floors: 2,
+  image: property9,
+  description:
+    "Experience luxury living in this premium 4-bedroom detached duplex located in the prestigious Cluster 2, Ibara GRA, Abeokuta. Sitting on approximately 750 sqm of land, the property features spacious all-ensuite bedrooms, two fully functional Boys' Quarters, modern finishes, and a thoughtfully designed layout, making it ideal for family living or investment.",
+  features: [
+    "4 Spacious All-Ensuite Bedrooms",
+    "Modern Kitchen",
+    "Spacious Living & Dining Areas",
+    "2 Boys' Quarters (BQs)",
+    "750 sqm of Land",
+    "Well-Planned Layout",
+    "Ample Parking Space",
+    "Serene & Secure Neighborhood",
+    "Premium GRA Location",
+    "Excellent Investment Opportunity"
+  ],
+  title: "Allocation Letter & Building Plan Approval",
+  gallery: [
+    property9a,
+    property9b,
+    property9c,
+    property9d,
+    property9e
+  ]
+},
+{
+  id: 10,
+  name: "4-Bedroom Detached Duplex with Boys' Quarters",
+  category: "residential",
+  type: "Residential",
+  subType: "Detached Duplex",
+  status: "For Sale",
+  location: "Iju Road, Ifako, Ikeja, Lagos State",
+  price: "₦350,000,000",
+  size: "330 sqm",
+  beds: 4,
+  baths: 4,
+  floors: 2,
+  image: property10,
+  description:
+    "This elegant 4-bedroom detached duplex with a Boys' Quarters is situated on 330 sqm in the desirable Iju Road area of Ifako, Ikeja. The property comes equipped with modern security and convenience features, making it an excellent choice for comfortable family living or investment.",
+  features: [
+    "4 Spacious En-Suite Bedrooms",
+    "Boys' Quarters (BQ)",
+    "330 sqm Land Size",
+    "16-Channel CCTV Security System",
+    "Internet Facility",
+    "Treated Water Supply",
+    "Stamped Concrete Compound",
+    "Ample Parking Space",
+    "Secure Neighborhood",
+    "Modern Design & Finishes"
+  ],
+  title: "Certificate of Occupancy (C of O), Deed, Survey & Receipt",
+  gallery: [
+    property10a,
+    property10b,
+    property10c
+  ]
+},
+{
+  id: 11,
+  name: "4-Bedroom Detached Duplex",
+  category: "residential",
+  type: "Residential",
+  subType: "Detached Duplex",
+  status: "For Sale",
+  location: "Southern Belle Estate, Off Kuforiji Olubi Road, Adigbe GRA, Abeokuta, Ogun State",
+  price: "Price on Request",
+  size: "N/A", // Replace with actual land/building size if available
+  beds: 4,
+  baths: 4,
+  floors: 2,
+  image: property11,
+  description:
+    "A well-designed 4-bedroom detached duplex located in the prestigious Southern Belle Estate, Off Kuforiji Olubi Road, Adigbe GRA, Abeokuta. Situated in a serene and secure neighborhood, this property offers an excellent opportunity for comfortable family living or investment.",
+  features: [
+    "4 Spacious Bedrooms",
+    "All Rooms En-Suite",
+    "Spacious Living & Dining Area",
+    "Modern Kitchen",
+    "Family Lounge",
+    "Ample Parking Space",
+    "Secure Estate",
+    "Serene Environment",
+    "Premium GRA Location",
+    "Excellent Investment Opportunity"
+  ],
+  title: "Title Available",
+  gallery: [
+    property11a,
+    property11b, 
+    property11c
   ]
 }
 ]
