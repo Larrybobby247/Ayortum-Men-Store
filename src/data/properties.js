@@ -59,7 +59,7 @@ import property9e from '../assets/property9f.jpg'
 import property10 from '../assets/property10a.jpg'
 import property10a from '../assets/property10b.jpg'
 import property10b from '../assets/property10c.jpg'
-import property10c from '../assets/property10d.jpg'
+
 
 import property11 from '../assets/property11a.jpg'
 import property11a from '../assets/property11b.jpg'
@@ -418,7 +418,6 @@ export const properties = [
   gallery: [
     property10a,
     property10b,
-    property10c
   ]
 },
 {
