@@ -1,0 +1,147 @@
+/* HomeVista styles. Every rule is scoped under .hv-root so nothing here can
+   affect the existing Accurratte Hommes pages. */
+
+.hv-root {
+  --hv-green-950: #14240f;
+  --hv-green-900: #1f3a17;
+  --hv-green-700: #467434;
+  --hv-green-100: #e8f0e4;
+  --hv-orange: #f58f20;
+  --hv-orange-dark: #d97a0e;
+  --hv-cream: #faf7f2;
+  --hv-ink: #1c231a;
+  --hv-muted: #5b6558;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--hv-ink);
+  background: #fff;
+  min-height: 100vh;
+}
+
+.hv-root .hv-display {
+  font-family: 'Playfair Display', Georgia, serif;
+  letter-spacing: -0.01em;
+}
+
+.hv-root :focus-visible {
+  outline: 3px solid var(--hv-orange);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+.hv-skip {
+  position: absolute;
+  left: -9999px;
+  top: 8px;
+  z-index: 100;
+  background: #fff;
+  color: var(--hv-ink);
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+.hv-skip:focus {
+  left: 8px;
+}
+
+/* Scroll reveal */
+.hv-root .hv-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+  transition-delay: var(--hv-delay, 0ms);
+}
+.hv-root .hv-reveal.hv-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* Hero background slow zoom */
+@keyframes hv-zoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+.hv-root .hv-hero-img {
+  animation: hv-zoom 22s ease-in-out infinite alternate;
+}
+
+@keyframes hv-spin {
+  to { transform: rotate(360deg); }
+}
+.hv-root .hv-spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: hv-spin 0.7s linear infinite;
+}
+
+.hv-root .hv-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.hv-root .hv-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px -24px rgba(31, 58, 23, 0.35);
+  border-color: rgba(245, 143, 32, 0.5);
+}
+
+/* Legal prose */
+.hv-root .hv-prose p {
+  color: #3d463a;
+  line-height: 1.8;
+  margin: 0 0 1rem;
+}
+.hv-root .hv-prose h3 {
+  font-weight: 700;
+  font-size: 1.02rem;
+  margin: 1.5rem 0 0.5rem;
+  color: var(--hv-green-900);
+}
+.hv-root .hv-prose ul {
+  margin: 0 0 1.1rem;
+  padding-left: 0;
+  list-style: none;
+}
+.hv-root .hv-prose li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.45rem;
+  color: #3d463a;
+  line-height: 1.7;
+}
+.hv-root .hv-prose li::before {
+  content: '';
+  position: absolute;
+  left: 0.2rem;
+  top: 0.7em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--hv-orange);
+}
+.hv-root .hv-prose a {
+  color: var(--hv-green-700);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.hv-root .hv-prose a:hover {
+  color: var(--hv-orange-dark);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hv-root .hv-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .hv-root .hv-hero-img,
+  .hv-root .hv-spinner {
+    animation: none;
+  }
+  .hv-root .hv-card,
+  .hv-root .hv-card:hover {
+    transition: none;
+    transform: none;
+  }
+}
