@@ -25,6 +25,9 @@ import MetroluxEstate from './pages/MetroluxEstate'
 const HomeVistaRoutes = lazy(() => import('./homevista'))
 
 function App() {
+  const { pathname } = useLocation()   // put with the other hooks, top of App()   
+  const isHomeVista = pathname === '/homevista' || pathname.startsWith('/homevista/')   
+  
   useEffect(() => {
     AOS.init({
       duration: 800,
@@ -34,8 +37,7 @@ function App() {
     })
   }, [])
 
-  const { pathname } = useLocation()   // put with the other hooks, top of App()   
-  const isHomeVista = pathname === '/homevista' || pathname.startsWith('/homevista/')   
+  
     if (isHomeVista) {     
       return <Suspense fallback={<div style={{ minHeight: '100vh' }} />}><HomeVistaRoutes /></Suspense>   
     }
