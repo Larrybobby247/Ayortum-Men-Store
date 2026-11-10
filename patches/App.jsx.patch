@@ -1,0 +1,42 @@
+diff --git a/src/App.jsx b/src/App.jsx
+index bb11212..e4e9178 100644
+--- a/src/App.jsx
++++ b/src/App.jsx
+@@ -1,5 +1,5 @@
+-import { Routes, Route } from 'react-router-dom'
+-import { useEffect } from 'react'
++import { Routes, Route, useLocation } from 'react-router-dom'
++import { useEffect, lazy, Suspense } from 'react'
+ import AOS from 'aos'
+ import 'aos/dist/aos.css'
+ 
+@@ -21,7 +21,13 @@ import News from './pages/News'
+ import Contact from './pages/Contact'
+ import MetroluxEstate from './pages/MetroluxEstate'
+ 
++// HomeVista section (/homevista/*), loaded on demand as its own bundle
++const HomeVistaRoutes = lazy(() => import('./homevista'))
++
+ function App() {
++  const { pathname } = useLocation()
++  const isHomeVista = pathname === '/homevista' || pathname.startsWith('/homevista/')
++
+   useEffect(() => {
+     AOS.init({
+       duration: 800,
+@@ -31,6 +37,15 @@ function App() {
+     })
+   }, [])
+ 
++  // HomeVista renders its own standalone shell (navbar/footer)
++  if (isHomeVista) {
++    return (
++      <Suspense fallback={<div style={{ minHeight: '100vh' }} aria-busy="true" />}>
++        <HomeVistaRoutes />
++      </Suspense>
++    )
++  }
++
+   return (
+     <div className="min-h-screen overflow-hidden">
+       <Loader />
