@@ -1,4 +1,5 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom' 
+import { useEffect, lazy, Suspense } from 'react'
 import { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -21,6 +22,8 @@ import News from './pages/News'
 import Contact from './pages/Contact'
 import MetroluxEstate from './pages/MetroluxEstate'
 
+const HomeVistaRoutes = lazy(() => import('./homevista'))
+
 function App() {
   useEffect(() => {
     AOS.init({
@@ -30,6 +33,12 @@ function App() {
       offset: 50,
     })
   }, [])
+
+  const { pathname } = useLocation()   // put with the other hooks, top of App()   
+  const isHomeVista = pathname === '/homevista' || pathname.startsWith('/homevista/')   
+    if (isHomeVista) {     
+      return <Suspense fallback={<div style={{ minHeight: '100vh' }} />}><HomeVistaRoutes /></Suspense>   
+    }
 
   return (
     <div className="min-h-screen overflow-hidden">
