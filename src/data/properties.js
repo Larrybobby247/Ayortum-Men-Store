@@ -345,7 +345,6 @@ export const properties = [
   gallery: [
     property8a,
     property8b,
-    property8c,
     property8d
   ]
 },
